@@ -6,6 +6,10 @@ QuranFW is curretly a Quran Reader For Windows. Inshallah I would add Quran Reci
 1. [Selenium](https://pypi.org/project/selenium/)
 2. [Plyer](https://pypi.org/project/pyler/)
 
+#Installation Method:
+
+1. Just Extract all .rar files in Files/Read,and there you go.
+
 Idea From:
 
 1.[Qawl app](https://qawl.app/)
