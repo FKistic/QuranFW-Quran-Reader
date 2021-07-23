@@ -7,6 +7,7 @@ QuranFW is curretly a Quran Reader For Windows. Inshallah I would add Quran Reci
 2. [Plyer](https://pypi.org/project/pyler/)
 
 Idea From:
+
 1.[Qawl app](https://qawl.app/)
 
 Further Plans:
