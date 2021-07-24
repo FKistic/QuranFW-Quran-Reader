@@ -102,7 +102,7 @@ class Functions(Gui):
             if read_only_index>604:
                 read_only_index=604
                 messagebox.showerror("Error!","No further pages.")
-            driver.get(fr"C:\Users\Faraaz Anas Ammaar\Documents\Python\Quran for Windows\Files\Read\{read_only_index}.png")
+            driver.get(fr"{dir_path}\Files\Read\{read_only_index}.png")
             var.set(read_only_index)
             jump_entry.update()
         def subtraction():
@@ -110,7 +110,7 @@ class Functions(Gui):
             read_only_index-=1
             if read_only_index<=1:
                 read_only_index=1
-            driver.get(fr"C:\Users\Faraaz Anas Ammaar\Documents\Python\Quran for Windows\Files\Read\{read_only_index}.png")
+            driver.get(fr"{dir_path}\Files\Read\{read_only_index}.png")
             var.set(read_only_index)
             jump_entry.update()
         def jump(e):
@@ -128,7 +128,7 @@ class Functions(Gui):
             except Exception as e:
                 print(e)
             read_only_index=int(a)
-            driver.get(fr"C:\Users\Faraaz Anas Ammaar\Documents\Python\Quran for Windows\Files\Read\{a}.png")
+            driver.get(fr"{dir_path}\Files\Read\{a}.png")
             var.set(a)
             jump_entry.update()
         def surah_name():
@@ -256,8 +256,8 @@ class Functions(Gui):
         
         chrome_options = Options()
         chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument(fr"--app=C:\Users\Faraaz Anas Ammaar\Documents\Python\Quran for Windows\Files\Read\{read_only_index}.png")
-        driver = webdriver.Chrome(r'C:\Users\Faraaz Anas Ammaar\Documents\Python\Quran for Windows\chromedriver.exe',options=chrome_options)
+        chrome_options.add_argument(fr"--app={dir_path}\Files\Read\{read_only_index}.png")
+        driver = webdriver.Chrome(r'{dir_path}\chromedriver.exe',options=chrome_options)
         driver.maximize_window()
 
         var=StringVar()
@@ -316,9 +316,7 @@ class Functions(Gui):
         info.pack(side=BOTTOM,anchor="e")
 
 
-        driver.get(fr"C:\Users\Faraaz Anas Ammaar\Documents\Python\Quran for Windows\Files\Read\{read_only_index}.png")
-        element = driver.find_element_by_xpath("//body[@style]")
-        driver.execute_script("arguments[0].setAttribute('style','White')", element)
+        driver.get(fr"{dir_path}\Files\Read\{read_only_index}.png")
     def Read_and_listen():
         messagebox.showinfo("Work in Process!", "Inshallah you will get this opption by next month")
     def SalahNotifier():
