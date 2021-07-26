@@ -257,7 +257,7 @@ class Functions(Gui):
         chrome_options = Options()
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument(fr"--app={dir_path}\Files\Read\{read_only_index}.png")
-        driver = webdriver.Chrome(r'{dir_path}\chromedriver.exe',options=chrome_options)
+        driver = webdriver.Chrome(fr'{dir_path}\chromedriver.exe',options=chrome_options)
         driver.maximize_window()
 
         var=StringVar()
